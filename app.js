@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/mydata', mydataRouter);
-app.use('/compute', computeRouter);
+app.use('/compute', compute);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
